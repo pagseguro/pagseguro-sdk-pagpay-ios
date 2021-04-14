@@ -6,7 +6,7 @@
 ## Introdução
 O PagPay é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank. 
 
-@import "https://user-images.githubusercontent.com/68859160/114779051-fb59b380-9d4b-11eb-8f93-23b4c7e7c0d9.png" {width="343px" height="150px"}
+![botoesPagPay](https://user-images.githubusercontent.com/68859160/114779051-fb59b380-9d4b-11eb-8f93-23b4c7e7c0d9.png)
 
 ---
 ## Conceitos Básicos
@@ -28,11 +28,11 @@ Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 2. Abra o projeto do seu aplicativo pelo Xcode.
 3. Arraste o arquivo `pagpay.framework` para dentro do seu projeto. Selecione `Copy itens if need`, `Created group`, `Add to target`.
 
-@import "https://user-images.githubusercontent.com/68859160/114779283-4a074d80-9d4c-11eb-9ac8-6b0d28185a52.png" {width="500px" height="300px"}
+![imagem3](https://user-images.githubusercontent.com/68859160/114779283-4a074d80-9d4c-11eb-9ac8-6b0d28185a52.png)
 
 4. Selecione seu projeto no Project Navigator e, em seguida, selecione seu targert no menu Targets. Depois vá em `frameworks, Libaries, and Embedded Content` e garanta que seu framework esteja `Embed & Sing`
 
-@import "https://user-images.githubusercontent.com/68859160/114779354-65725880-9d4c-11eb-80bd-7e18eafec923.png"
+![Imagem4](https://user-images.githubusercontent.com/68859160/114779354-65725880-9d4c-11eb-80bd-7e18eafec923.png)
 
 ___
 ## Instalação
