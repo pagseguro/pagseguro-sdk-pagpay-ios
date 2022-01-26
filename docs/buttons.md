@@ -39,3 +39,18 @@ let darkPagPayButton = PagPayPaymentButton(frame: .zero, theme: .dark)
 ```xml
 let lightPagPayButton = PagPayPaymentButton(frame: .zero, theme: .light)
 ```
+
+#### Adicionar a função que vai executar o clicar no botão
+```xml
+private func setupDarkPagPayButton() {
+        view.addSubview(darkPagPayButton)
+         
+        darkPagPayButton.translatesAutoresizingMaskIntoConstraints = false
+        darkPagPayButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16.0).isActive = true
+        darkPagPayButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16.0).isActive = true
+        darkPagPayButton.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
+        darkPagPayButton.topAnchor.constraint(equalTo: lightPagPayPaymentButton.bottomAnchor, constant: 16).isActive = true
+         
+        darkPagPayButton.addTarget(self, action: #selector(tapDarkButton), for: .touchUpInside)
+    }
+```
