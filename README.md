@@ -1,10 +1,10 @@
 ![LogoPagSeguro](https://user-images.githubusercontent.com/68859160/114778858-c77e8e00-9d4b-11eb-8c67-e97eade6534f.png)
 
 
-# PagPay iOS SDK
+# Pagar com PagBank iOS SDK
 ---
 ## Introdução
-O PagPay é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank. 
+O Pagar com PagBank é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank. 
 
 ![botoesPagPay](docs/images/example_light_button.png)
 
@@ -26,10 +26,10 @@ ___
 ---
 ## Pré-requisitos
 * Possuir uma conta PagSeguro.
-* Para utilizar o PagPay, é necessário que o seu aplicativo seja desenvolvido em Swift.
+* Para utilizar o Pagar com PagBank, é necessário que o seu aplicativo seja desenvolvido em Swift.
 
 ---
-## Integrando o PagPay
+## Integrando o Pagar com PagBank
 Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 1. Faça o download da versão mais recente da biblioteca. 
 2. Abra o projeto do seu aplicativo pelo Xcode.
@@ -42,14 +42,31 @@ Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 ![Imagem4](https://user-images.githubusercontent.com/68859160/114779354-65725880-9d4c-11eb-80bd-7e18eafec923.png)
 
 ___
-## Instalação
-Saiba como utilizar o PagPay no seu aplicativo iOS lendo esta [documentação](https://confluence.intranet.uol.com.br/confluence/pages/viewpage.action?spaceKey=PSPAGDIG&title=Integrando+com+a+wallet+app2app).
+## Credenciais de Autenticação
+As soluções públicas do PagSeguro requerem autenticação e através dela identificamos e autorizamos o integrador a utilizar nossas APIs e seus recursos, bem como eventuais configurações adicionais.
 
-* [Como usar os botões](docs/buttons.md)
+* Primeiro passo - Ter uma conta PagSeguro
+Para criar uma conta no nosso ambiente de Sandbox, acesse o link abaixo
+https://acesso.pagseguro.uol.com.br/sandbox
+
+* Segundo passo - Criar uma Aplicação para que você possa realizar ações em nome dos usuários.
+Seguir o passo 1. Criar sua aplicação no link:  https://dev.pagseguro.uol.com.br/reference/connect-create-client
 
 ___
+## Ambientes disponíveis 
+
+* Produção - https://api.pagseguro.com/
+* Sandbox  - https://sandbox.api.pagseguro.com/
+
+___
+## Instalação
+Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS lendo esta [documentação](https://confluence.intranet.uol.com.br/confluence/pages/viewpage.action?spaceKey=PSPAGDIG&title=Integrando+com+a+wallet+app2app).
+
+* [Como usar os botões](docs/buttons.md)
+* [Como criar uma requisição de pagamento](docs/requisicao.md)
+___
 ## Fluxo
-* [Fluxo](docs/fluxo.md)
+![Imagem](docs/images/fluxo.png)
 
 ___
 ## Copyright
