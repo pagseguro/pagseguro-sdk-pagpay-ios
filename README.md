@@ -6,9 +6,14 @@
 ## Introdução
 O PagPay é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank. 
 
-![botoesPagPay](https://user-images.githubusercontent.com/68859160/114779051-fb59b380-9d4b-11eb-8f93-23b4c7e7c0d9.png)
+![botoesPagPay](docs/images/example_light_button.png)
 
 ---
+## SDK
+
+A SDK disponibiliza um botão de pagamentos que facilita a integração do Merchant, através de suas credenciais pode enviar os dados do seu pedido e nossa SDK irá realizar a integração com nossos serviços. 
+
+___
 ## Conceitos Básicos
 
 Antes de fazer uso da biblioteca é importante que o desenvolvedor realize alguns procedimentos básicos, além de assimilar alguns conceitos importantes para o correto funcionamento de sua aplicação. É necessário ter em mãos o token da conta PagSeguro que será configurado como vendedor (Seller), tal token pode ser obtido no ibanking do PagSeguro.
@@ -16,9 +21,11 @@ Antes de fazer uso da biblioteca é importante que o desenvolvedor realize algun
 ___
 ## Históricos de Versão
 * 0.0.1 : **Versão inicial publicada** - 25/05/2021
+* 0.0.2 : **Versão atualizada publicada** - 24/01/2022
 
 ---
 ## Pré-requisitos
+* Possuir uma conta PagSeguro.
 * Para utilizar o PagPay, é necessário que o seu aplicativo seja desenvolvido em Swift.
 
 ---
@@ -37,6 +44,12 @@ Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 ___
 ## Instalação
 Saiba como utilizar o PagPay no seu aplicativo iOS lendo esta [documentação](https://confluence.intranet.uol.com.br/confluence/pages/viewpage.action?spaceKey=PSPAGDIG&title=Integrando+com+a+wallet+app2app).
+
+* [Como usar os botões](docs/buttons.md)
+
+___
+## Fluxo
+* [Fluxo](docs/fluxo.md)
 
 ___
 ## Copyright
