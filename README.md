@@ -46,11 +46,10 @@ ___
 As soluções públicas do PagSeguro requerem autenticação e através dela identificamos e autorizamos o integrador a utilizar nossas APIs e seus recursos, bem como eventuais configurações adicionais.
 
 * Primeiro passo - Ter uma conta PagSeguro
-Para criar uma conta no nosso ambiente de Sandbox, acesse o link abaixo
-https://acesso.pagseguro.uol.com.br/sandbox
+Para criar uma conta no nosso ambiente de Sandbox, acesse o link: https://acesso.pagseguro.uol.com.br/sandbox
 
 * Segundo passo - Criar uma Aplicação para que você possa realizar ações em nome dos usuários.
-Seguir o passo 1. Criar sua aplicação no link:  https://dev.pagseguro.uol.com.br/reference/connect-create-client
+Seguir o passo 1. Criar sua aplicação no link: https://dev.pagseguro.uol.com.br/reference/connect-create-client
 
 ___
 ## Ambientes disponíveis 
@@ -64,6 +63,12 @@ Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS lendo esta [docume
 
 * [Como usar os botões](docs/buttons.md)
 * [Como criar uma requisição de pagamento](docs/requisicao.md)
+___
+## Receba as notificações de pagamento
+Informações disponível abaixo:
+
+https://dev.pagseguro.uol.com.br/reference/charge-webhook
+
 ___
 ## Fluxo
 ![Imagem](docs/images/fluxo.png)
