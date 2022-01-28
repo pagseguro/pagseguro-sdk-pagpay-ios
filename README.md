@@ -40,6 +40,11 @@ Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 4. Selecione seu projeto no Project Navigator e, em seguida, selecione seu targert no menu Targets. Depois vá em `frameworks, Libaries, and Embedded Content` e garanta que seu framework esteja `Embed & Sing`
 
 ![Imagem4](https://user-images.githubusercontent.com/68859160/114779354-65725880-9d4c-11eb-80bd-7e18eafec923.png)
+___
+## Receba as notificações de pagamento
+O PagSeguro poderá enviar notificações via webhook para seu ambiente sempre que um evento (uma mudança de status de transação) acontecer, possibilitando a automação de seus processos de gestão de vendas.
+
+Acesse o link para mais informações: https://dev.pagseguro.uol.com.br/reference/charge-webhook
 
 ___
 ## Credenciais de Autenticação
@@ -49,9 +54,9 @@ As soluções públicas do PagSeguro requerem autenticação e através dela ide
 
 Para criar uma conta no nosso ambiente de Sandbox, acesse o link: https://acesso.pagseguro.uol.com.br/sandbox
 
-* Segundo passo - Criar uma Aplicação para utilizar o pagar com PagBank.
+* Segundo passo - Criar uma Aplicação para utilizar o Pagar com PagBank.
 
-Seguir o passo 1. Criar sua aplicação no link: https://dev.pagseguro.uol.com.br/reference/connect-create-client
+Acesse o link: https://dev.pagseguro.uol.com.br/reference/connect-create-client
 
 ___
 ## Ambientes disponíveis 
