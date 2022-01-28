@@ -67,10 +67,9 @@ Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
 * [Como criar uma requisição de pagamento](docs/requisicao.md)
 * [Como simular um pagamento em Sandbox](docs/sandbox.md)
 ___
-## Receba as notificações de pagamento
-Informações disponível abaixo:
 
-https://dev.pagseguro.uol.com.br/reference/charge-webhook
+## Como devolver/cancelar um pagamento recebido?
+Acessando o iBanking no link https://acesso.pagseguro.uol.com.br/, você pode através do menu "Extratos e Relatórios", acessar a opção Extrato de Transações identificar a transação que deseja devolver/cancelar, ao acessar os detalhes da transação a opção de devolver/cancelar estará disponível.
 
 ___
 ## Fluxo
