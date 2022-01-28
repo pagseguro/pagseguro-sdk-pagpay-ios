@@ -62,19 +62,19 @@ ___
 * Sandbox  - https://sandbox.api.pagseguro.com/
 
 ___
-## Instalação
-Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
-
-* [Como usar os botões](docs/buttons.md)
-* [Como criar uma requisição de pagamento](docs/requisicao.md)
-
-___
 ## Formas de Integração:
 
 Se você deseja integrar com o Produto via API, segue os links abaixo, caso contrário siga a documentação do Github.
 
 * Criando um pedido via API Order com Deeplink: https://dev.pagseguro.uol.com.br/reference/criando-um-pedido-com-deeplink-pagar-com-pagbank
 * Simulando um pagamento de pedido em sandbox: https://dev.pagseguro.uol.com.br/reference/pagando-um-pedido-com-deeplink-em-sandbox
+
+___
+## Instalação
+Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
+
+* [Como usar os botões](docs/buttons.md)
+* [Como criar uma requisição de pagamento](docs/requisicao.md)
 
 ___
 ## Como devolver/cancelar um pagamento recebido?
@@ -84,11 +84,3 @@ ___
 ## Fluxo
 ![Imagem](docs/images/fluxo.png)
 
-___
-## Copyright
-
-Todos os direitos reservados. O UOL é uma marca comercial do UNIVERSO ONLINE S / A. O logotipo do UOL é uma marca comercial do UNIVERSO ONLINE S / A. Outras marcas, nomes, logotipos e marcas são de propriedade de seus respectivos proprietários. As informações contidas neste documento pertencem ao UNIVERSO ONLINE S/A. Todos os direitos reservados. UNIVERSO ONLINE S/A. - Av. Faria Lima, 1384, 6º andar, São Paulo / SP, CEP 01452-002, Brasil. O serviço PagSeguro não é, nem pretende ser comparável a serviços financeiros oferecidos por instituições financeiras ou administradoras de cartões de crédito, consistindo apenas de uma forma de facilitar e monitorar a execução das transações de comércio electrónico através da gestão de pagamentos. Qualquer transação efetuada através do PagSeguro está sujeita e deve estar em conformidade com as leis da República Federativa do Brasil. Aconselhamos que você leia os termos e condições cuidadosamente.
-___
-## Aviso Legal
-
-O UOL não oferece garantias de qualquer tipo (expressas, implícitas ou estatutárias) com relação às informações nele contidas. O UOL não assume nenhuma responsabilidade por perdas e danos (diretos ou indiretos), causados por erros ou omissões, ou resultantes da utilização deste documento ou a informação contida neste documento ou resultantes da aplicação ou uso do produto ou serviço aqui descrito. O UOL reserva o direito de fazer qualquer tipo de alterações a quaisquer informações aqui contidas sem aviso prévio.
