@@ -1,6 +1,3 @@
-![LogoPagSeguro](https://user-images.githubusercontent.com/68859160/114778858-c77e8e00-9d4b-11eb-8c67-e97eade6534f.png)
-
-
 # Pagar com PagBank iOS SDK
 ---
 ## Introdução
@@ -70,9 +67,16 @@ Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
 
 * [Como usar os botões](docs/buttons.md)
 * [Como criar uma requisição de pagamento](docs/requisicao.md)
-* [Como simular um pagamento em Sandbox](docs/sandbox.md)
-___
 
+___
+## Formas de Integração:
+
+Se você deseja integrar com o Produto via API, segue os links abaixo, caso contrário siga a documentação do Github.
+
+* Criando um pedido via API Order com Deeplink: https://dev.pagseguro.uol.com.br/reference/criando-um-pedido-com-deeplink-pagar-com-pagbank
+* Simulando um pagamento de pedido em sandbox: https://dev.pagseguro.uol.com.br/reference/pagando-um-pedido-com-deeplink-em-sandbox
+
+___
 ## Como devolver/cancelar um pagamento recebido?
 Acessando o iBanking no link https://acesso.pagseguro.uol.com.br/, você pode através do menu "Extratos e Relatórios", acessar a opção Extrato de Transações identificar a transação que deseja devolver/cancelar, ao acessar os detalhes da transação a opção de devolver/cancelar estará disponível.
 
