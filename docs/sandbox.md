@@ -27,9 +27,9 @@ Caso o pedido tenha sido cadastrado realizado pelo SDK, obtido através do objet
 * #### Balance (saldo em conta)
 
 Com o pedido criado, acessar o enpoint  de simulação de pagamento com Saldo conforme o cURL abaixo :
-
-### ATENÇÃO: no ambiente de simulação, os pedidos deverão ter valor entre R$ 1,00 e R$ 1.500,00
-
+___
+## ATENÇÃO: no ambiente de simulação, os pedidos deverão ter valor entre R$ 1,00 e R$ 1.500,00
+___
 
 ```xml
 curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/balance/{id-requisicao}' \
@@ -42,6 +42,7 @@ curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/balance
 
 
 Para essa requisição, os parâmetros são:
+
 • {status-desejado} - Informar "PAID" caso queira simular um pagamento com sucesso ou "DECLINED" para um pagamento rejeitado. 
 • {id-requisicao} - ID recebido cadastrar ao pedido via SDK ou order-api.   
 
@@ -50,8 +51,9 @@ Para essa requisição, os parâmetros são:
 
 Com o pedido criado, acessar o endpoint  de simulação de pagamento com Cartão de crédito conforme o cURL abaixo:
 
-### ATENÇÃO: os números dos cartões informados devem conter na lista de cartões aqui documentados. Cada cartão representa um status da transação de confirmação de pagamento
-
+___
+## ATENÇÃO: os números dos cartões informados devem conter na lista de cartões aqui documentados. Cada cartão representa um status da transação de confirmação de pagamento
+___
 
 ```xml
 curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/credit-card/{id-requisicao}' \
@@ -60,6 +62,7 @@ curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/credit-
     "card_number": "{cartao_desejado}"
 }'
 ```
+
 
 
 Para essa requisição, os parâmetros são: 
@@ -72,8 +75,7 @@ Para essa requisição, os parâmetros são:
 
 
 
-
-Retornos para simulação de pagamento SUCESSO:
+* Retornos para simulação de pagamento SUCESSO:
 
 • Para status "PAID":
 
@@ -87,10 +89,9 @@ Retornos para simulação de pagamento SUCESSO:
 "DECLINED"
 ```
 
-Para ambos status, o fluxo de webhooks de pagamentos é acionado. Para maiores detalhes sobre o funcionamento podem ser vistos [nessa documentação](https://documenter.getpostman.com/view/10863174/TVetc6HV#209355ec-a9d4-4228-8c6d-81e0db11002a)
+• Para ambos status, o fluxo de webhooks de pagamentos é acionado. Para maiores detalhes sobre o funcionamento podem ser vistos [nessa documentação](https://documenter.getpostman.com/view/10863174/TVetc6HV#209355ec-a9d4-4228-8c6d-81e0db11002a)
 
-
-
+___
 ### Tratamento de erros simulação de pagamento
 Em caso de falhas no envio da requisição ou no processamento da mesma, é possível receber um código de erro 4XX ou 5XX com o seguinte payload:
 
