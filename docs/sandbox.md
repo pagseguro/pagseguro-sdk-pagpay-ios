@@ -7,6 +7,7 @@ Caso o pedido tenha sido cadastrado realizado pelo SDK, obtido através do objet
 "paymentLink": "https://pagseguro.uol.com.br/para-seu-negocio/aplicativos/minha-conta/download?f=order&r=11111111-2222-3333-4444-555555555555"
 ```
 
+
  Se o pedido foi cadastrado através do Order-api, o retorno estará disponível no campo "url" do array "deepLink", conforme a seguir:
 
 ```xml
@@ -20,11 +21,12 @@ Caso o pedido tenha sido cadastrado realizado pelo SDK, obtido através do objet
 ]
 ```
 
-* Balance (saldo em conta)
+
+* ### Balance (saldo em conta)
 
 Com o pedido criado, acessar o enpoint  de simulação de pagamento com Saldo conforme o cURL abaixo :
 
-(aviso) ATENÇÃO: no ambiente de simulação, os pedidos deverão ter valor entre R$ 1,00 e R$ 1.500,00 (aviso)
+# ATENÇÃO: no ambiente de simulação, os pedidos deverão ter valor entre R$ 1,00 e R$ 1.500,00
 
 ```xml
 curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/balance/{id-requisicao}' \
@@ -34,16 +36,18 @@ curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/balance
     "status":"{status-desejado}"
 }'
 ```
+
+
 Para essa requisição, os parâmetros são:
 • {status-desejado} - Informar "PAID" caso queira simular um pagamento com sucesso ou "DECLINED" para um pagamento rejeitado. 
 • {id-requisicao} - ID recebido cadastrar ao pedido via SDK ou order-api.   
 
 
-* Credit Card (Cartões de crédito da carteira)
+* ### Credit Card (Cartões de crédito da carteira)
 
-Com o pedido criado, acessar o enpoint  de simulação de pagamento com Cartão de crédito conforme o cURL abaixo :
+Com o pedido criado, acessar o endpoint  de simulação de pagamento com Cartão de crédito conforme o cURL abaixo:
 
-(aviso) ATENÇÃO: os números dos cartões informados devem conter na lista de cartões aqui documentados. Cada cartão representa um status da transação de confirmação de pagamento (aviso)
+# ATENÇÃO: os números dos cartões informados devem conter na lista de cartões aqui documentados. Cada cartão representa um status da transação de confirmação de pagamento
 
 ```xml
 curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/credit-card/{id-requisicao}' \
@@ -52,6 +56,38 @@ curl --location --request POST 'https://sandbox.sdk.pagseguro.com/pagpay/credit-
     "card_number": "{cartao_desejado}"
 }'
 ```
+
+
+Para essa requisição, os parâmetros são: 
+
+• {cartao_desejado} - Informar o número do cartão conforme retorno desejado:
+
+IMAGEM AQUI
+
+• {id-requisicao} - ID recebido cadastrar ao pedido via SDK ou order-api.
+
+
+
+
+Retornos para simulação de pagamento SUCESSO:
+
+• Para status "PAID":
+
+```xml
+"PAID"
+```
+
+• Para status "DECLINED":
+
+```xml
+"DECLINED"
+```
+
+Para ambos status, o fluxo de webhooks de pagamentos é acionado. Para maiores detalhes sobre o funcionamento podem ser vistos [nessa documentação](https://documenter.getpostman.com/view/10863174/TVetc6HV#209355ec-a9d4-4228-8c6d-81e0db11002a)
+
+
+
+
 
 
 ```xml
