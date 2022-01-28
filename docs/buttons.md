@@ -1,9 +1,9 @@
 ## Como usar
 
 ---
-Definições de atributos do xml:
- - colorScheme: Define o tipo de estilo de um botão, caso este não seja informado o tipo de estilo será o light.
- O atributo também podem ser alterado via código.
+* Implementando o botão: 
+
+Na SDK são disponibilizadas cinco opções de botões que podem ser utilizadas:
 
 #### Yellow
 ![Exemplo de Botão Yellow](images/example_yellow_button.png)

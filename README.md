@@ -59,7 +59,7 @@ ___
 
 ___
 ## Instalação
-Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS lendo esta [documentação](https://confluence.intranet.uol.com.br/confluence/pages/viewpage.action?spaceKey=PSPAGDIG&title=Integrando+com+a+wallet+app2app).
+Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
 
 * [Como usar os botões](docs/buttons.md)
 * [Como criar uma requisição de pagamento](docs/requisicao.md)
