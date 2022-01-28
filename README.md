@@ -65,7 +65,7 @@ Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
 
 * [Como usar os botões](docs/buttons.md)
 * [Como criar uma requisição de pagamento](docs/requisicao.md)
-* [Como simular um pagamento em Sandbox] (docs/sandbox.md)
+* [Como simular um pagamento em Sandbox](docs/sandbox.md)
 ___
 ## Receba as notificações de pagamento
 Informações disponível abaixo:
