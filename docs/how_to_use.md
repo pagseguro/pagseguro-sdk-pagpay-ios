@@ -19,22 +19,24 @@ private func createPaymentRequest() -> PagPayRequest {
                unitAmount: 3500
       )
    ]
+
+   let shipping = ShippingModel(
+                     address: AddressModel(
+                        street: "rua street",
+                        number: "123",
+                        complement: "ap 1",
+                        district: "SP",
+                        city: "Guarulhos",
+                        state: "SP",
+                        country: "BRA",
+                        postalCode: "12345678"
+                     )
+                  )
    
    return PagPayRequest(referenceId: "REF-ID",
                         amount: amount,
                         items: items,
-                        shipping: ShippingModel(
-                           address: AddressModel(
-                              street: "rua street",
-                              number: "123",
-                              complement: "ap 1",
-                              district: "SP",
-                              city: "Guarulhos",
-                              state: "SP",
-                              country: "BRA",
-                              postalCode: "12345678"
-                           )
-                        ),
+                        shipping: ,
                         notificationUrls: ["https://meusite.com/pedidos/pagamentos"],
                         customer: nil)
 }

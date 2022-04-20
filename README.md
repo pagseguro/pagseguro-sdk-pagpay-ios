@@ -96,12 +96,10 @@ ___
 2. Você pode através do menu "Extratos e Relatórios" 
 3. Acessar a opção "Extrato de Transações" e identificar a transação que deseja realizar o estorno. 
 4. Ao acessar os detalhes da transação a opção de estorno estará disponível.
-<br>
-<br>
-<br>
+
 <br>
 
-License
+Licença
 =======
 
     Copyright 2022 PagSeguro Internet LTDA.
