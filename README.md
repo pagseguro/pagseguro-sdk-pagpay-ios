@@ -1,16 +1,16 @@
 # Pagar com PagBank iOS SDK
----
+
 ## Introdução
 O Pagar com PagBank é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank. 
 
 ![botoesPagPay](docs/images/example_light_button.png)
 
----
 ## SDK
 
 A SDK disponibiliza um botão de pagamentos que facilita a integração do Merchant, através de suas credenciais pode enviar os dados do seu pedido e nossa SDK irá realizar a integração com nossos serviços. 
 
-___
+---
+
 ## Como funciona
 
 ### Conceitos
@@ -74,6 +74,8 @@ Temos dois ambientes disponíveis, um para realizar os testes de integração e 
 | Sandbox  | `pagPay.redirectPagBank(merchantInfo, paymentRequest, delegate: self, env: .SANDBOX)`|
 | Produção | `pagPay.redirectPagBank(merchantInfo, paymentRequest, delegate: self, env: .PROD)`|
 
+:warning: Depois da criação do pedido no ambiente de `SANDBOX`, você pode simular o pagamento seguindo essa [documentação](https://dev.pagseguro.uol.com.br/reference/pagando-um-pedido-com-deeplink-em-sandbox) :warning:
+
 ___
 
 
@@ -94,5 +96,24 @@ ___
 2. Você pode através do menu "Extratos e Relatórios" 
 3. Acessar a opção "Extrato de Transações" e identificar a transação que deseja realizar o estorno. 
 4. Ao acessar os detalhes da transação a opção de estorno estará disponível.
+<br>
+<br>
+<br>
+<br>
 
-___
+License
+=======
+
+    Copyright 2022 PagSeguro Internet LTDA.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
