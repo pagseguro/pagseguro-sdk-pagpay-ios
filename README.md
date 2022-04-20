@@ -59,7 +59,7 @@ ___
 Saiba como utilizar o Pagar com PagBank no seu aplicativo iOS.
 
 * [Como usar os botões](docs/buttons.md)
-* [Como criar uma requisição de pagamento](docs/requisicao.md)
+* [Como criar uma requisição de pagamento](docs/how_to_use.md)
 
 ___
 
