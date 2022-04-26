@@ -97,6 +97,11 @@ ___
 3. Acessar a opção "Extrato de Transações" e identificar a transação que deseja realizar o estorno. 
 4. Ao acessar os detalhes da transação a opção de estorno estará disponível.
 
+
+<br>
+
+Para mais informações sobre outra forma de integração acesse nossa [documentação](https://dev.pagseguro.uol.com.br/reference/criando-um-pedido-com-deeplink-pagar-com-pagbank)
+
 <br>
 
 Licença

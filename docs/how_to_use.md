@@ -44,7 +44,7 @@ private func createPaymentRequest() -> PagPayRequest {
 
 3 - Cria um método com as informações do comerciante do tipo `MerchantInfoRequest`
 
-Obs: O `clientId` é recuperado na etapa de `Credenciais de Autenticação`
+Obs: O `clientId` é recuperado na etapa de [`Credenciais de Autenticação`](./../README.md#credenciais-de-autenticação)
 
 ```swift
 private func createMerchantInfoRequest() -> MerchantInfoRequest {
@@ -55,7 +55,7 @@ private func createMerchantInfoRequest() -> MerchantInfoRequest {
 }
 ```
 
-3 - No evento de clique do botão, deve ser instânciada a classe `PagPay` e logo após chamar o método `redirectPagBank`.
+4 - No evento de clique do botão, deve ser instânciada a classe `PagPay` e logo após chamar o método `redirectPagBank`.
 
 ```swift
    let pagPay = PagPay()
@@ -66,7 +66,7 @@ private func createMerchantInfoRequest() -> MerchantInfoRequest {
          env: .PROD)
 ```
 
-4 - Por fim deve-se implementar o delegate `PagPayRedirectProtocol` no seu ViewController para receber as notificações de sucesso ou erro da chamada de criação do pedido.
+5 - Por fim deve-se implementar o delegate `PagPayRedirectProtocol` no seu ViewController para receber as notificações de sucesso ou erro da chamada de criação do pedido.
 
 ```swift
 extension ViewController: PagPayRedirectProtocol {
