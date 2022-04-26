@@ -37,8 +37,7 @@ private func createPaymentRequest() -> PagPayRequest {
                         amount: amount,
                         items: items,
                         shipping: shipping,
-                        notificationUrls: ["https://meusite.com/pedidos/pagamentos"],
-                        customer: nil)
+                        notificationUrls: ["https://meusite.com/pedidos/pagamentos"])
 }
 ```
 
