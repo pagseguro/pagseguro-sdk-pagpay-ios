@@ -36,7 +36,7 @@ private func createPaymentRequest() -> PagPayRequest {
    return PagPayRequest(referenceId: "REF-ID",
                         amount: amount,
                         items: items,
-                        shipping: ,
+                        shipping: shipping,
                         notificationUrls: ["https://meusite.com/pedidos/pagamentos"],
                         customer: nil)
 }
@@ -49,7 +49,7 @@ Obs: O `clientId` é recuperado na etapa de [`Credenciais de Autenticação`](./
 ```swift
 private func createMerchantInfoRequest() -> MerchantInfoRequest {
    return MerchantInfoRequest(
-            clientId: "d7f06e36-87ed-47c8-85de-4928bec3c4f3", 
+            clientId: "SEU_CLIENT_ID_AQUI", 
             appName: "App SDK Demo iOS"
          )
 }
@@ -60,9 +60,9 @@ private func createMerchantInfoRequest() -> MerchantInfoRequest {
 ```swift
    let pagPay = PagPay()
    pagPay.redirectPagBank(
-         merchantInfo: createMerchantInfoRequest(), 
-         request: createPaymentRequest(), 
-         delegate: self, 
+         merchantInfo: createMerchantInfoRequest(),
+         request: createPaymentRequest(),
+         delegate: self,
          env: .PROD)
 ```
 
