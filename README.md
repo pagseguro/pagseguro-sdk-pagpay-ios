@@ -37,8 +37,8 @@ ___
 
 ## Requisitos
 
-- Xcode 12+
-- iOS 9.0+
+- Xcode 13+
+- iOS 11.0+
 
 ___
 

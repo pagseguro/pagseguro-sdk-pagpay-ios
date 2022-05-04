@@ -57,7 +57,7 @@ private func createMerchantInfoRequest() -> MerchantInfoRequest {
 4 - No evento de clique do botão, deve ser instânciada a classe `PagPay` e logo após chamar o método `redirectPagBank`.
 
 ```swift
-   let pagPay = PagPay()
+   let pagPay = PSPagPay()
    pagPay.redirectPagBank(
          merchantInfo: createMerchantInfoRequest(),
          request: createPaymentRequest(),
