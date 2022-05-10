@@ -9,7 +9,7 @@ import UIKit
 import PagPay
 
 class ViewController: UIViewController {
-    let pagPayButtonViewCode = PagPayPaymentButton(frame: .zero, theme: .dark)
+    let pagPayButtonViewCode = PagPayPaymentButton(frame: .zero, theme: .green)
     
     @IBOutlet weak var pagPayButtonOutlet: PagPayPaymentButton!
     
@@ -30,10 +30,11 @@ class ViewController: UIViewController {
         pagPayButtonViewCode.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16.0).isActive = true
         pagPayButtonViewCode.heightAnchor.constraint(equalToConstant: 58.0).isActive = true
         pagPayButtonViewCode.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150.0).isActive = true
+        pagPayButtonViewCode.addTarget(self, action: #selector(buttonViewCodeTapped), for: .touchUpInside)
     }
     
     func setupPagPayButtonOutlet() {
-        pagPayButtonOutlet.setupLightGreenTheme()
+        pagPayButtonOutlet.setupGrayTheme()
     }
     
     private func createMerchantInfoRequest() -> MerchantInfoRequest {
@@ -74,7 +75,15 @@ class ViewController: UIViewController {
                             notificationUrls: ["https://webhook.site/c2a91025-7461-4cdb-862d-5d7c2ece1a08"])
     }
     
+    @objc private func buttonViewCodeTapped() {
+        redirect()
+    }
+    
     @IBAction func buttonTapped(_ sender: Any) {
+        redirect()
+    }
+    
+    private func redirect() {
         loading.startAnimating()
         pagPayService.redirectPagBank(
             merchantInfo: createMerchantInfoRequest(),
@@ -82,7 +91,6 @@ class ViewController: UIViewController {
             delegate: self,
             env: .SANDBOX)
     }
-    
 }
 
 extension ViewController: PagPayRedirectProtocol {
