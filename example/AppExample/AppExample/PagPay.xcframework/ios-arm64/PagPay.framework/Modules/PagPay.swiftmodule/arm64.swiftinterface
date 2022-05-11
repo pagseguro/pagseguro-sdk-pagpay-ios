@@ -1,0 +1,119 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PagPay
+import Foundation
+@_exported import PagPay
+import Swift
+import SystemConfiguration
+import UIKit.UIColor
+import UIKit.UIFont
+import UIKit
+import _Concurrency
+public enum PagPayButtonTheme {
+  case light
+  case dark
+  case yellow
+  case lead
+  case gray
+  case green
+  case lightGreen
+  public static func == (a: PagPay.PagPayButtonTheme, b: PagPay.PagPayButtonTheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PagPayPaymentButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreGraphics.CGRect, theme: PagPay.PagPayButtonTheme = .light)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func setupTheme(titleColor: UIKit.UIColor, imageName: Swift.String, backgroundColor: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setupLightTheme()
+  @_Concurrency.MainActor(unsafe) public func setupDarkTheme()
+  @_Concurrency.MainActor(unsafe) public func setupYellowTheme()
+  @_Concurrency.MainActor(unsafe) public func setupLeadTheme()
+  @_Concurrency.MainActor(unsafe) public func setupGrayTheme()
+  @_Concurrency.MainActor(unsafe) public func setupGreenTheme()
+  @_Concurrency.MainActor(unsafe) public func setupLightGreenTheme()
+  @objc deinit
+}
+extension PagPay.PagPayPaymentButton {
+  @objc override dynamic public func prepareForInterfaceBuilder()
+}
+public struct PagPayRequest : Swift.Encodable {
+  public init(referenceId: Swift.String, amount: PagPay.AmountModel, items: [PagPay.ItemModel], shipping: PagPay.ShippingModel?, notificationUrls: [Swift.String])
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct MerchantInfoRequest : Swift.Encodable {
+  public let clientId: Swift.String
+  public let appName: Swift.String
+  public init(clientId: Swift.String, appName: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class NetworkReachability {
+  @objc deinit
+}
+public struct AmountModel : Swift.Encodable {
+  public init(value: Swift.Int, currency: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct ShippingModel : Swift.Encodable {
+  public init(address: PagPay.AddressModel)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum Environment {
+  case PROD
+  case SANDBOX
+  case QA
+  public static func == (a: PagPay.Environment, b: PagPay.Environment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ApiError : Swift.Decodable {
+  public var httpStatus: Swift.Int
+  public var traceId: Swift.String
+  public var message: Swift.String
+  public var errorMessages: [PagPay.ErrorMessages]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ErrorMessages : Swift.Decodable {
+  public var code: Swift.String
+  public var description: Swift.String
+  public var parameterName: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol PagPayRedirectProtocol : AnyObject {
+  func onSuccessToRedirect(deepLinkCode: Swift.String)
+  func onErrorToRedirect(error: PagPay.ApiError)
+}
+public class PSPagPay {
+  public init()
+  public func redirectPagBank(merchantInfo: PagPay.MerchantInfoRequest, request: PagPay.PagPayRequest, delegate: PagPay.PagPayRedirectProtocol, env: PagPay.Environment)
+  @objc deinit
+}
+public struct ItemModel : Swift.Encodable {
+  public init(reference: Swift.String?, name: Swift.String, quantity: Swift.Int, unitAmount: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct AddressModel : Swift.Encodable {
+  public init(street: Swift.String, number: Swift.String, complement: Swift.String?, district: Swift.String, city: Swift.String, state: Swift.String, country: Swift.String, postalCode: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PagPay.PagPayButtonTheme : Swift.Equatable {}
+extension PagPay.PagPayButtonTheme : Swift.Hashable {}
+extension PagPay.Environment : Swift.Equatable {}
+extension PagPay.Environment : Swift.Hashable {}
+extension PagPay.HTTPMethod : Swift.Equatable {}
+extension PagPay.HTTPMethod : Swift.Hashable {}
+extension PagPay.HTTPMethod : Swift.RawRepresentable {}
