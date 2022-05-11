@@ -1,0 +1,11 @@
+framework module PagPay {
+  umbrella header "PagPay.h"
+
+  export *
+  module * { export * }
+}
+
+module PagPay.Swift {
+    header "PagPay-Swift.h"
+    requires objc
+}
