@@ -42,17 +42,39 @@ ___
 
 ___
 
-## Instalação
+## Instalação 
+
+## CocoaPods
+
+- Para realizar a instalação via [CocoaPods](https://cocoapods.org/)   
+
+    Adicione as seguintes linhas no seu `Podfile`
+
+    ```console
+    use_frameworks!
+    pod 'PagPay', '~> 1.0.0'
+    ```
+
+## Manual (.framework)
 - Para integrar a biblioteca (SDK) em seu projeto, siga os passos abaixo.
 1. Faça o download da versão mais recente da biblioteca.
 2. Abra o projeto do seu aplicativo pelo Xcode.
-3. Arraste o arquivo `pagpay.framework` para dentro do seu projeto. Selecione `Copy itens if need`, `Created group`, `Add to target`.
+3. Arraste o arquivo `PagPay.framework` para dentro do seu projeto. Selecione `Copy itens if need`, `Created group`, `Add to target`.
 
 ![imagem3](https://user-images.githubusercontent.com/68859160/114779283-4a074d80-9d4c-11eb-9ac8-6b0d28185a52.png)
 
 4. Selecione seu projeto no Project Navigator e em seguida, selecione seu targets no menu targets. Depois vá em `frameworks, Libaries, and Embedded Content` e garanta que seu framework esteja `Embed & Sing`
 
 ![Imagem4](https://user-images.githubusercontent.com/68859160/114779354-65725880-9d4c-11eb-80bd-7e18eafec923.png)
+___
+
+## Manual (.xcframework)
+
+- Para instalar o .xcframework manualmente:
+  1. Faça o download da versão mais recente do `.xcframework` no repositório.
+  2. Abra o projeto do seu aplicativo pelo Xcode.
+  3. Arraste o arquivo `PagPay.xcframework` para dentro do seu projeto. Selecione `Copy itens if need`, `Created group`, `Add to target`.
+  4. Selecione seu projeto no Project Navigator e em seguida, selecione seu targets no menu targets. Depois vá em `frameworks, Libaries, and Embedded Content` e garanta que seu framework esteja `Embed & Sing`
 ___
 
 ## Ultilização
