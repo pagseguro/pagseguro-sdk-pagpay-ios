@@ -72,7 +72,8 @@ class ViewController: UIViewController {
                             amount: amount,
                             items: items,
                             shipping: shipping,
-                            notificationUrls: ["https://webhook.site/c2a91025-7461-4cdb-862d-5d7c2ece1a08"])
+                            notificationUrls: ["https://webhook.site/c2a91025-7461-4cdb-862d-5d7c2ece1a08"],
+                            redirectUrl: "https://meu-e-commerce.com.br")
     }
     
     @objc private func buttonViewCodeTapped() {
