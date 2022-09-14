@@ -52,7 +52,7 @@ ___
 
     ```console
     use_frameworks!
-    pod 'PagPay', '~> 1.0.0'
+    pod 'PagPay', '~> 1.1.0'
     ```
 
 ## Manual (.framework)
