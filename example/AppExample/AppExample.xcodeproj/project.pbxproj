@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23130E8728C6B1A60092260E /* PagPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23130E8528C6B1A10092260E /* PagPay.xcframework */; };
+		23130E8828C6B1A60092260E /* PagPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23130E8528C6B1A10092260E /* PagPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A0013B28219DD60084FE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0013A28219DD60084FE35 /* AppDelegate.swift */; };
 		23A0013D28219DD60084FE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0013C28219DD60084FE35 /* SceneDelegate.swift */; };
 		23A0013F28219DD60084FE35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A0013E28219DD60084FE35 /* ViewController.swift */; };
 		23A0014228219DD60084FE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A0014028219DD60084FE35 /* Main.storyboard */; };
 		23A0014428219DDE0084FE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A0014328219DDE0084FE35 /* Assets.xcassets */; };
 		23A0014728219DDE0084FE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A0014528219DDE0084FE35 /* LaunchScreen.storyboard */; };
-		23DBCFF92824383F00BC7B2D /* PagPay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DBCFF72824383800BC7B2D /* PagPay.xcframework */; };
-		23DBCFFA2824383F00BC7B2D /* PagPay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23DBCFF72824383800BC7B2D /* PagPay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		23A0015428219EA30084FE35 /* Embed Frameworks */ = {
+		23130E8428C6AF880092260E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23DBCFFA2824383F00BC7B2D /* PagPay.xcframework in Embed Frameworks */,
+				23130E8828C6B1A60092260E /* PagPay.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23130E8528C6B1A10092260E /* PagPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PagPay.xcframework; sourceTree = "<group>"; };
 		23A0013728219DD60084FE35 /* AppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A0013A28219DD60084FE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A0013C28219DD60084FE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		23A0014328219DDE0084FE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A0014628219DDE0084FE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A0014828219DDE0084FE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23DBCFF72824383800BC7B2D /* PagPay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PagPay.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23DBCFF92824383F00BC7B2D /* PagPay.xcframework in Frameworks */,
+				23130E8728C6B1A60092260E /* PagPay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 				23A0014328219DDE0084FE35 /* Assets.xcassets */,
 				23A0014528219DDE0084FE35 /* LaunchScreen.storyboard */,
 				23A0014828219DDE0084FE35 /* Info.plist */,
-				23DBCFF72824383800BC7B2D /* PagPay.xcframework */,
+				23130E8528C6B1A10092260E /* PagPay.xcframework */,
 			);
 			path = AppExample;
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 				23A0013328219DD60084FE35 /* Sources */,
 				23A0013428219DD60084FE35 /* Frameworks */,
 				23A0013528219DD60084FE35 /* Resources */,
-				23A0015428219EA30084FE35 /* Embed Frameworks */,
+				23130E8428C6AF880092260E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,7 +321,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,7 +356,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

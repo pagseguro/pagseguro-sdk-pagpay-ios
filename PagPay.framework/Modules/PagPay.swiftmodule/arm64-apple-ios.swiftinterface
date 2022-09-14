@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PagPay
 import Foundation
 @_exported import PagPay
@@ -40,7 +40,7 @@ extension PagPay.PagPayPaymentButton {
   @objc override dynamic public func prepareForInterfaceBuilder()
 }
 public struct PagPayRequest : Swift.Encodable {
-  public init(referenceId: Swift.String, amount: PagPay.AmountModel, items: [PagPay.ItemModel], shipping: PagPay.ShippingModel?, notificationUrls: [Swift.String])
+  public init(referenceId: Swift.String, amount: PagPay.AmountModel, items: [PagPay.ItemModel], shipping: PagPay.ShippingModel? = nil, notificationUrls: [Swift.String], redirectUrl: Swift.String? = nil)
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct MerchantInfoRequest : Swift.Encodable {
