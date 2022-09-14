@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HAv7525O4rEZCAokXVYFsE0URMs=
+		GoTjqkRn5CiABLyEff5dphdCFFI=
 		</data>
 		<key>Headers/PagPay-Swift.h</key>
 		<data>
-		Qcpo5KZfnu4IT/4826GPWn06bj4=
+		DV+N2pyh8TNSYdim2y9K847HOZA=
 		</data>
 		<key>Headers/PagPay.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		f8B3T8wRyUTftncE+OrvC0PJZ40=
+		8hAY0ntGdsFOMPygig3oMk/rjno=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5lDwAzGKSC5MZb2yF3Uveu1ZS5c=
+		QRI8j8fAax59OnYvKqyB7kU5oQA=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		phCVDAmNrVm2/AVuLKJOXHctG+w=
+		QKL9jjZDGg2CzCqjcbJ0ptAdDo0=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		efM+hRWU1W8Fdo5topwkyIBnW8g=
+		yFxUZK95CQCVo2at/rDENmpcz8Y=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		5lDwAzGKSC5MZb2yF3Uveu1ZS5c=
+		QRI8j8fAax59OnYvKqyB7kU5oQA=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		phCVDAmNrVm2/AVuLKJOXHctG+w=
+		QKL9jjZDGg2CzCqjcbJ0ptAdDo0=
 		</data>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		efM+hRWU1W8Fdo5topwkyIBnW8g=
+		yFxUZK95CQCVo2at/rDENmpcz8Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -59,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ms42HUOXbw5qqol5Qw/HrP3Xrk+ReR9WkqE6+5cMvoc=
+			EsYhu7uNF1MAl5OnHzqoFKSGd9aVtwabenRhbm/Soss=
 			</data>
 		</dict>
 		<key>Headers/PagPay-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NOCtRq9qvEeknmruOd8H347fWP4E7vU/htPqm8vJ/7c=
+			nNc1YmQsH2MYIBzy8BaUk6AXV0Nm0XWiIjh9gmjU1Ls=
 			</data>
 		</dict>
 		<key>Headers/PagPay.h</key>
@@ -80,42 +80,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzUGYV98IQU3ocM3wpK18UMsL9+2+N6szFOFLjUOBPM=
+			werR8CNMYElbtUhJcXRZ4E3/Gxo/NZZB8frqoyFbeFc=
 			</data>
 		</dict>
 		<key>Modules/PagPay.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2bxbnh0LEdoR0qsJmRri9r6NgYIL4+eTJmBgiGlwag=
+			yx7OM5KO7pQkkYB9sfeL//Pst6omX59rjR6bq+sJpF0=
 			</data>
 		</dict>
 		<key>Modules/PagPay.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/hQkHMYGGhsR/0PdvbTFtB8xA0fkgYQh6M5DAvIt07k=
+			vK3lSUUhZuqQ7sA3o0kOA9I10wp9BNvG/yahj/1XLsw=
 			</data>
 		</dict>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LzUGYV98IQU3ocM3wpK18UMsL9+2+N6szFOFLjUOBPM=
+			werR8CNMYElbtUhJcXRZ4E3/Gxo/NZZB8frqoyFbeFc=
 			</data>
 		</dict>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2bxbnh0LEdoR0qsJmRri9r6NgYIL4+eTJmBgiGlwag=
+			yx7OM5KO7pQkkYB9sfeL//Pst6omX59rjR6bq+sJpF0=
 			</data>
 		</dict>
 		<key>Modules/PagPay.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/hQkHMYGGhsR/0PdvbTFtB8xA0fkgYQh6M5DAvIt07k=
+			vK3lSUUhZuqQ7sA3o0kOA9I10wp9BNvG/yahj/1XLsw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

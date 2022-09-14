@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = "PagPay"
-  spec.version      = "1.0.0"
-  spec.summary      = "Pagar com PagBak"
+  spec.version      = "1.1.0"
+  spec.summary      = "Pagar com PagBank"
   spec.description  = <<-DESC
   O Pagar com PagBank é o produto do PagSeguro que permite aos vendedores utilizar o app PagBank como método de pagamento no checkout do seu próprio aplicativo. 
   Este produto confere mais segurança aos vendedores devido aos padrões de validação de conta e cartões de crédito, adotados pelo PagBank.
