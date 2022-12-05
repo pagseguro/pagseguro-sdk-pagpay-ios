@@ -131,6 +131,8 @@ extension ViewController: PagPayRedirectProtocol {
 
 > :warning: Para mais detalhes de como simular um pagamento no ambiente de Sandbox [acesse o link](docs/simulate_payment.md)
 
+> :information_source: Aplicativo com implementação de exemplo [acesse o link](example/AppExample/)
+
 ## Verificação do status do pagamento
 
 O PagSeguro poderá enviar notificações via webhook para seu ambiente sempre que um evento (uma mudança de status de transação) acontecer, possibilitando a automação de seus processos de gestão de vendas.
@@ -153,7 +155,7 @@ Depois de todos os testes e validações realizados no ambiente de Sandbox, a su
 5. Para mais informações [acesse o link](https://dev.pagseguro.uol.com.br/reference/connect-intro)
 
 
-**Como realizar o estorno um pagamento recebido?**
+**Como realizar o estorno de um pagamento recebido?**
 
 1. Acessando o iBanking no [link](https://acesso.pagseguro.uol.com.br/).
 2. Você pode através do menu "Extratos e Relatórios" 
